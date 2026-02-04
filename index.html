@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web UI Project1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            background: #ffffff;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 300px;
+            text-align: center;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        .h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .google-btn {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .divider {
+            margin: 25px 0;
+            height: 1px;
+            background: #eee;
+        }
+
+        .field {
+            text-align: left;
+            margin-bottom: 18px;
+        }
+
+        .field label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        .field input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .password-wrapper {
+            position: relative;
+        }
+
+        .signup-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            background: #bdbdc2;
+            color: #fff;
+            font-size: 15px;
+            cursor: not-allowed;
+            margin-top: 10px;
+        }
+
+        .signin-text {
+            margin-top: 18px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .signin-text span {
+            color: #000;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #8e8d8d;
+            background-color: #eaeaea;
+            height: 50px;
+            text-align: center;
+            padding: 20px 0;
+            box-sizing: border-box;
+            font-weight: 600;
+        }
+
+        .footer span {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .eye {
+            position: absolute;
+            right: 12px;
+            top: 55%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            11ElevenLabs
+        </div>
+        <h2>Create an account</h2>
+        <button class="google-btn">
+            <img src="/Users/gayathrib/Desktop/practice_projects/web_practice_projects/web_project_1/google_logo.png"
+                width="18">
+            Sign up with Google
+        </button>
+        <div class="divider"></div>
+        <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="">
+        </div>
+        <div class="field">
+            <label>Password</label>
+            <div class="password-wrapper">
+                <input type="password">
+                <span class="eye">
+                    <img src="/Users/gayathrib/Desktop/practice_projects/web_practice_projects/web_project_1/view.png"
+                        width="15">
+                </span>
+            </div>
+        </div>
+        <button class="signup-btn">Sign up</button>
+        <div class="signin-text"> Already registered? <span><u>Sign in</u></span> </div>
+    </div>
+    <div class="footer"> By continuing, you agree to our <span><u>Terms of Service</u></span> and <span><u>Privacy
+                Policy</u></span>.
+    </div>
+</body>
+
+</html>
